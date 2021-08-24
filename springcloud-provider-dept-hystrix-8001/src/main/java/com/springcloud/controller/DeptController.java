@@ -28,7 +28,7 @@ public class DeptController {
     private DeptService deptService;
 
     @GetMapping("/dept/get/{id}")
-    @HystrixCommand(fallbackMethod ="hystriyget")
+    @HystrixCommand(fallbackMethod ="hystriyget")//服务熔断时返回方法 "hystriyget"
     public Dept get(@PathVariable("id")Long id){
         Dept dept=deptService.queryById(id);
         if(dept==null){

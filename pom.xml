@@ -17,6 +17,7 @@
         <module>springcloud-provider-dept-8002</module>
         <module>springcloud-provider-dept-8003</module>
         <module>springcloud-consumer-dept-feign</module>
+        <module>springcloud-provider-dept-hystrix-8001</module>
     </modules>
     <!--打包方式-->
     <packaging>pom</packaging>
@@ -96,6 +97,15 @@
 
         </dependencies>
     </dependencyManagement>
-
+    <!--springboot 打包插件-->
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.3.0.RELEASE</version>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>

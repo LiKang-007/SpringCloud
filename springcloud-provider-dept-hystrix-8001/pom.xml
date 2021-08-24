@@ -17,6 +17,12 @@
             <artifactId>spring-cloud-starter-hystrix</artifactId>
             <version>1.4.6.RELEASE</version>
         </dependency>
+        <!--hystrix-dashboard监控-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-hystrix-dashboard</artifactId>
+            <version>1.4.6.RELEASE</version>
+        </dependency>
         <!--服务提供者eureka的依赖-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>

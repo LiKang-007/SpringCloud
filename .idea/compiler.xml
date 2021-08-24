@@ -20,8 +20,6 @@
         <module name="springcloud-eureka-7001" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel target="8">
-      <module name="springcloud-consumer-hysyrix-dashboard" target="1.8" />
-    </bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8" />
   </component>
 </project>

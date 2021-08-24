@@ -11,10 +11,12 @@
 
     <artifactId>springcloud-consumer-dept-80</artifactId>
     <dependencies>
-        <!--Ribbon-->
+        <!--使用feign代替ribbon-->
+        <!--feign-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-ribbon</artifactId>
+            <artifactId>spring-cloud-starter-feign</artifactId>
+            <version>1.4.6.RELEASE</version>
         </dependency>
 
         <!--eureka-->
